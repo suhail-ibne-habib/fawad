@@ -21,11 +21,11 @@ export default function Hero() {
         {/* Hero Title */}
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
-            Transforming Business
+            Building the Next
           </span>
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-cyber-blue text-glow">
-            Operations Through Practical AI
+            Generation of Enterprise AI
           </span>
         </h1>
 
@@ -40,14 +40,14 @@ export default function Hero() {
             href="#contact"
             className="group relative inline-flex items-center justify-center px-8 py-4 text-sm font-semibold font-orbitron text-white rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.3)] border-glow"
           >
-            Start Your Transformation
+            Book a Demo
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#services"
             className="px-8 py-4 text-sm font-semibold font-orbitron text-zinc-300 hover:text-white rounded-full border border-zinc-700/60 bg-cyber-dark/50 hover:bg-cyber-dark/80 hover:border-zinc-500/80 active:scale-[0.98] transition-all duration-300"
           >
-            Explore Services
+            Solutions
           </a>
         </div>
       </div>

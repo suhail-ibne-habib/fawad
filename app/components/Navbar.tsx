@@ -63,7 +63,7 @@ export default function Navbar() {
             className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold font-orbitron text-white rounded-full group bg-gradient-to-br from-cyber-cyan to-cyber-blue group-hover:from-cyber-cyan group-hover:to-cyber-blue hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-cyan-800 transition-all"
           >
             <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-cyber-dark rounded-full group-hover:bg-transparent">
-              Get Started
+              Explore CorpQ
             </span>
           </a>
         </div>
@@ -99,7 +99,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="mt-6 w-full text-center py-3.5 rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue font-orbitron font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
           >
-            Get Started
+            Explore CorpQ
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

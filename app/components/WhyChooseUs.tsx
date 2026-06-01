@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, Zap, Users, Award } from "lucide-react";
+import { Check, Zap, Users, Award, Layers } from "lucide-react";
 
 export default function WhyChooseUs() {
   const features = [
@@ -32,20 +32,20 @@ export default function WhyChooseUs() {
   const stats = [
     {
       icon: Zap,
-      number: "199+",
-      label: "Projects Delivered",
+      number: "20+ Years",
+      label: "Enterprise Technology Experience",
       glowColor: "text-cyber-cyan",
     },
     {
       icon: Users,
-      number: "50+",
-      label: "Enterprise Clients",
+      number: "5+ Partners",
+      label: "Technology & Industry Collaborations",
       glowColor: "text-blue-400",
     },
     {
-      icon: Award,
-      number: "20+",
-      label: "Years Experience",
+      icon: Layers,
+      number: "1 Platform",
+      label: "Building CorpQ — Enterprise Expert Discovery AI",
       glowColor: "text-indigo-400",
     },
   ];
