@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="about" className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto z-10">
+    <section id="why-choose-us" className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto z-10">
       {/* Background visual elements */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-cyber-blue/5 rounded-full blur-[100px] pointer-events-none -z-10" />
 
