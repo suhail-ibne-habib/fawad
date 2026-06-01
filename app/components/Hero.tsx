@@ -21,17 +21,17 @@ export default function Hero() {
         {/* Hero Title */}
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
-            Empowering Through
+            Transforming Business
           </span>
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-cyber-blue text-glow">
-            Intelligent Innovation
+            Operations Through Practical AI
           </span>
         </h1>
 
         {/* Sub-description */}
         <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mb-12 font-medium leading-relaxed">
-          Expert AI consultancy specializing in automation, cybersecurity, and marketing solutions to transform your business operations.
+          Helping organisations improve processes, strengthen governance, automate workflows, and adopt AI with confidence.
         </p>
 
         {/* CTA Buttons */}

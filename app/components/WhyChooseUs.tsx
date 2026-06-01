@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
     },
     {
       icon: Award,
-      number: "15+",
+      number: "20+",
       label: "Years Experience",
       glowColor: "text-indigo-400",
     },
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
           Why Choose <span className="text-cyber-cyan text-glow">CorpTech AI</span>?
         </h2>
         <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
-          We combine deep technical expertise with a business-first approach to deliver scalable, secure, and high-performing artificial intelligence systems.
+          Leveraging 20+ years of enterprise operational leadership and practical consultancy expertise to help organisations improve processes, strengthen governance, automate workflows, and adopt AI with confidence.
         </p>
       </div>
 
