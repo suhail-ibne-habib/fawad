@@ -93,8 +93,9 @@ export default function Services() {
           return (
             <div
               key={service.id}
+              id={service.id}
               style={{ top: `${96 + index * 24}px` }}
-              className={`sticky bg-cyber-card/90 backdrop-blur-xl border border-zinc-800/80 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-10 items-start justify-between shadow-[0_20px_50px_rgba(0,0,0,0.6)] group transition-all duration-300 hover:border-zinc-700/80 ${service.shadow}`}
+              className={`sticky scroll-mt-28 bg-cyber-card/90 backdrop-blur-xl border border-zinc-800/80 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-10 items-start justify-between shadow-[0_20px_50px_rgba(0,0,0,0.6)] group transition-all duration-300 hover:border-zinc-700/80 ${service.shadow}`}
             >
               {/* Background gradient flare */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none -z-10`} />
