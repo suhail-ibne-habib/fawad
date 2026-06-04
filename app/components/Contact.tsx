@@ -45,7 +45,7 @@ export default function Contact() {
         {/* Left Column: Info Coordinates */}
         <div className="lg:col-span-5 flex flex-col justify-between bg-cyber-card/60 border border-zinc-800/80 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
           <div className="absolute top-0 right-0 w-24 h-24 bg-cyber-cyan/5 rounded-bl-full pointer-events-none" />
-          
+
           <div>
             <h3 className="font-orbitron font-bold text-xl md:text-2xl mb-8 text-zinc-100">
               Let’s Connect 👋
@@ -61,7 +61,7 @@ export default function Contact() {
                 <span className="text-sm font-medium">getintouch@corptechai.co.uk</span>
               </a>
 
-              <a
+              {/* <a
                 href="tel:+15551234567"
                 className="flex items-center gap-4 text-zinc-400 hover:text-cyber-cyan transition-colors group"
               >
@@ -69,7 +69,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-cyber-cyan" />
                 </div>
                 <span className="text-sm font-medium">+1 (555) 123-4567</span>
-              </a>
+              </a> */}
 
               <div className="flex items-center gap-4 text-zinc-400 group">
                 <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800/80 flex items-center justify-center shrink-0">

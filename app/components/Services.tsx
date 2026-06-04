@@ -82,7 +82,7 @@ export default function Services() {
           <span className="text-cyber-cyan text-glow">Solutions</span>
         </h2>
         <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
-          Comprehensive AI solutions designed to transform your business operations, secure your data, and drive sustainable market growth.
+          Built on enterprise operational experience, our solutions help organisations of all sizes improve processes, strengthen governance, automate workflows, and apply AI where it delivers measurable value.
         </p>
       </div>
 

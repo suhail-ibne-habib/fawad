@@ -22,7 +22,7 @@ export default function Hero() {
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8 text-white">
           Transforming Business<br /> Operations Through
           <br />
-          <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.45)]">Practical AI</span>
+          <span className="text-white">Practical AI</span>
         </h1>
 
         {/* Sub-description */}
@@ -36,8 +36,10 @@ export default function Hero() {
             href="#contact"
             className="group relative inline-flex items-center justify-center px-8 py-4 text-sm font-semibold font-orbitron text-white rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.3)] border-glow"
           >
-            Book a Demo
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            <h3 className="font-orbitron font-bold text-xl md:text-sm text-zinc-100">
+              Let’s Connect 👋
+            </h3>
+            {/* <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" /> */}
           </a>
           <a
             href="#services"
