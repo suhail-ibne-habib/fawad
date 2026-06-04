@@ -43,9 +43,11 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="px-8 py-4 text-sm font-semibold font-orbitron text-zinc-300 hover:text-white rounded-full border border-zinc-700/60 bg-cyber-dark/50 hover:bg-cyber-dark/80 hover:border-zinc-500/80 active:scale-[0.98] transition-all duration-300"
+            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold font-orbitron text-zinc-300 hover:text-white rounded-full group bg-gradient-to-br from-cyber-cyan to-cyber-blue active:scale-[0.98] transition-all duration-300"
           >
-            Solutions
+            <span className="relative px-8 py-3.5 transition-all ease-in duration-75 bg-cyber-dark rounded-full group-hover:bg-transparent">
+              Solutions
+            </span>
           </a>
         </div>
       </div>

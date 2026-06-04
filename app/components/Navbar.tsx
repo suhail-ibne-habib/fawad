@@ -27,7 +27,7 @@ export default function Navbar() {
   ];
 
   const productsSubMenu = [
-    { name: "CorpQ", href: "#corpq" },
+    { name: "CorpQ", href: "https://corpq.co.uk", external: true },
   ];
 
   const solutionsSubMenu = [
@@ -46,8 +46,8 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-cyber-dark/85 backdrop-blur-md border-b border-cyber-cyan/15 py-4 shadow-[0_4px_30px_rgba(0,0,0,0.15)]"
-          : "bg-transparent py-6 border-b border-transparent"
+        ? "bg-cyber-dark/85 backdrop-blur-md border-b border-cyber-cyan/15 py-4 shadow-[0_4px_30px_rgba(0,0,0,0.15)]"
+        : "bg-transparent py-6 border-b border-transparent"
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -75,6 +75,8 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
                     className="px-4 py-2.5 rounded-xl text-xs font-semibold font-orbitron text-zinc-400 hover:text-cyber-cyan hover:bg-cyber-cyan/5 border border-transparent hover:border-cyber-cyan/15 transition-all duration-200"
                   >
                     {item.name}
@@ -144,7 +146,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold font-orbitron text-white rounded-full group bg-gradient-to-br from-cyber-cyan to-cyber-blue group-hover:from-cyber-cyan group-hover:to-cyber-blue hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-cyan-800 transition-all"
+            className="relative cursor-pointer inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold font-orbitron text-white rounded-full group bg-gradient-to-br from-cyber-cyan to-cyber-blue group-hover:from-cyber-cyan group-hover:to-cyber-blue hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-cyan-800 transition-all"
           >
             <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-cyber-dark rounded-full group-hover:bg-transparent">
               Explore CorpQ
@@ -181,6 +183,8 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   onClick={() => setIsOpen(false)}
                   className="text-lg font-orbitron font-medium text-zinc-500 hover:text-cyber-cyan transition-colors"
                 >
@@ -250,7 +254,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="mt-6 w-full text-center py-3.5 rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue font-orbitron font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2 text-white"
+            className="mt-6 w-full text-center cursor-pointer py-3.5 rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue font-orbitron font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2 text-white"
           >
             Explore CorpQ
             <ArrowRight className="w-4 h-4" />

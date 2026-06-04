@@ -4,28 +4,28 @@ import { Check, Zap, Users, Award, Layers } from "lucide-react";
 export default function WhyChooseUs() {
   const features = [
     {
-      title: "End-to-End AI Implementation",
-      desc: "From initial feasibility analysis and scoping to production deployment, optimization, and staff training.",
+      title: "Practical Business Focus",
+      desc: "Improving business processes and operational performance before applying technology solutions.",
     },
     {
-      title: "Industry-Leading Security",
-      desc: "Zero-trust architecture, encrypted data transmission, and model alignment security defaults built-in.",
+      title: "Enterprise Operational Experience",
+      desc: "Built on 20+ years of leadership across operations, governance, service management and transformation.",
     },
     {
-      title: "Scalable Automation Frameworks",
-      desc: "Integrations engineered to support high-volume transaction loads and grow as your team expands.",
+      title: "Governance & Risk Expertise",
+      desc: "Helping organisations establish controls, accountability, compliance and responsible AI practices.",
     },
     {
-      title: "Data-Driven Decision Making",
-      desc: "Interactive metrics dashboards that visualize live performance, usage models, and cost parameters.",
+      title: "Automation with Purpose",
+      desc: "Identifying opportunities where automation delivers measurable business value and efficiency gains.",
     },
     {
-      title: "Continuous Optimization & Support",
-      desc: "24/7 post-deployment monitoring, prompt iteration, parameter tuning, and periodic vulnerability patching.",
+      title: "Cybersecurity & Resilience",
+      desc: "Supporting secure technology adoption through governance, risk management and operational resilience.",
     },
     {
-      title: "Compliance & Regulatory Expertise",
-      desc: "Guidance on local and international standards, ensuring safe deployment within strict industry boundaries.",
+      title: "Independent & Vendor-Neutral",
+      desc: "Providing practical advice focused on business outcomes rather than technology sales.",
     },
   ];
 
@@ -47,6 +47,7 @@ export default function WhyChooseUs() {
       number: "1 Platform",
       label: "Building CorpQ — Enterprise Expert Discovery AI",
       glowColor: "text-indigo-400",
+      href: "https://corpq.co.uk",
     },
   ];
 
@@ -97,21 +98,42 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 items-center relative z-10">
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
-            return (
-              <div
-                key={idx}
-                className={`flex flex-col items-center text-center py-4 ${idx < 2 ? "md:border-r border-zinc-800/80" : ""
-                  }`}
-              >
-                <div className="w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-4">
+            const isLink = 'href' in stat && stat.href;
+            const containerClasses = `flex flex-col items-center text-center py-4 ${
+              idx < 2 ? "md:border-r border-zinc-800/80" : ""
+            } ${isLink ? "hover:scale-[1.02] cursor-pointer group/stat transition-all duration-300" : ""}`;
+
+            const content = (
+              <>
+                <div className={`w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-4 ${isLink ? "group-hover/stat:border-cyber-cyan/40 group-hover/stat:shadow-[0_0_15px_rgba(6,182,212,0.25)] transition-all duration-300" : ""}`}>
                   <Icon className="w-5 h-5 text-cyber-cyan" />
                 </div>
                 <div className={`font-orbitron font-extrabold text-4xl md:text-5xl mb-2 text-glow ${stat.glowColor}`}>
                   {stat.number}
                 </div>
-                <div className="text-zinc-400 text-sm font-medium tracking-wide">
+                <div className={`text-zinc-400 text-sm font-medium tracking-wide ${isLink ? "group-hover/stat:text-cyber-cyan transition-colors" : ""}`}>
                   {stat.label}
                 </div>
+              </>
+            );
+
+            if (isLink) {
+              return (
+                <a
+                  key={idx}
+                  href={stat.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={containerClasses}
+                >
+                  {content}
+                </a>
+              );
+            }
+
+            return (
+              <div key={idx} className={containerClasses}>
+                {content}
               </div>
             );
           })}
