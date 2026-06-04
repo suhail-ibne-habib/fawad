@@ -29,7 +29,7 @@ export default function Home() {
         <WhyChooseUs />
 
         {/* Portfolio Showcase section */}
-        <Projects />
+        {/* <Projects /> */}
 
         {/* Inquiries & Coordinates form */}
         <Contact />

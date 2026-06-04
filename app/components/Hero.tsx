@@ -22,11 +22,11 @@ export default function Hero() {
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8 text-white">
           Transforming Business<br /> Operations Through
           <br />
-          <span className="text-white">Practical AI</span>
+          <span className="text-ice-blue">Practical AI</span>
         </h1>
 
         {/* Sub-description */}
-        <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mb-12 font-medium leading-relaxed">
+        <p className="text-white-400 text-lg md:text-xl max-w-2xl mb-12 font-medium leading-relaxed">
           Helping organisations improve processes, strengthen governance, automate workflows, and adopt AI with confidence.
         </p>
 

@@ -34,6 +34,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${orbitron.variable} ${inter.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-[#030712] text-zinc-100 font-sans selection:bg-cyan-500/30 selection:text-cyan-300">
         {children}
