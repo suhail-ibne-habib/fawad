@@ -36,7 +36,7 @@ export default function Contact() {
         <h2 className="font-orbitron font-bold text-3xl md:text-5xl mb-6">
           Ready to <span className="text-cyber-cyan text-glow">Transform</span>?
         </h2>
-        <p className="text-zinc-400 text-base md:text-lg max-w-3xl mx-auto">
+        <p className="text-white-400 text-base md:text-lg max-w-3xl mx-auto">
           Let's turn operational challenges into smarter processes, better decisions and measurable business outcomes through practical AI, governance and automation.
         </p>
       </div>

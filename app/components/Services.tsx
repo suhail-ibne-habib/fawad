@@ -1,14 +1,14 @@
 import React from "react";
-import { Compass, Layers, Network, Brain, CheckCircle2 } from "lucide-react";
+import { Layers, Network, Brain, CheckCircle2, Shield } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
       id: "strategy",
-      icon: Compass,
-      title: "AI Strategy & Transformation",
+      icon: Brain,
+      title: "AI Consultancy",
       desc: "Helping organisations define their AI future.",
-      details: "We work with leadership teams to identify where AI can create meaningful impact across operations, decision-making and knowledge management.",
+      details: "We help organisations understand where AI can create real business value, improve operational efficiency and support informed decision-making. Our approach combines enterprise operational experience with practical consultancy to ensure AI initiatives align with business objectives, governance requirements and measurable outcomes.",
       features: [
         "AI Opportunity Mapping",
         "Strategic Alignment & Visioning",
@@ -23,15 +23,16 @@ export default function Services() {
     {
       id: "platform",
       icon: Layers,
-      title: "AI Platform Development",
-      desc: "Building scalable AI-powered platforms for enterprise workflows.",
-      details: "We design and deploy custom end-to-end AI platforms that scale with your enterprise needs, streamlining complex business workflows and operations.",
+      title: "AI Governance & Frameworks",
+      desc: "Establishing robust compliance, safety, and ethics standards for AI usage.",
+      details: "We help organizations define ethical guidelines, ensure regulatory compliance, implement risk mitigation strategies, and manage accountability for all deployed AI systems.",
       features: [
-        "Scalable Architecture Design",
-        "Enterprise Workflow Automation",
-        "Bespoke LLM Platforms",
+        "Regulatory Audits & Compliance",
+        "Bias Mitigation & Fairness",
+        "Risk Assessment Frameworks",
+        "Explainable AI (XAI) Standards",
       ],
-      featuresTitle: "Key Offerings",
+      featuresTitle: "Governance Pillars",
       color: "from-blue-500/10 to-purple-500/5",
       borderColor: "group-hover:border-blue-500/40",
       iconColor: "text-blue-400",
@@ -40,13 +41,13 @@ export default function Services() {
     {
       id: "integration",
       icon: Network,
-      title: "Enterprise AI Integration",
-      desc: "Integrating intelligent capabilities into existing systems.",
-      details: "Enhance your current infrastructure by seamlessly embedding advanced AI models and intelligent capabilities directly into your existing business systems.",
+      title: "AI Automation",
+      desc: "Streamlining business operations through automated intelligent agents.",
+      details: "We design and build customized AI automation pipelines that eliminate manual bottlenecks, integrate legacy systems, and run high-efficiency robotic process workflows.",
       features: [
-        "System Connectivity & APIs",
-        "Legacy Infrastructure Upgrades",
-        "Intelligent Feature Addition",
+        "Intelligent Process Automation",
+        "Automated Document Processing",
+        "Cognitive Agent Workflows",
       ],
       featuresTitle: "Capabilities",
       color: "from-indigo-500/10 to-cyan-500/5",
@@ -56,17 +57,17 @@ export default function Services() {
     },
     {
       id: "consultancy",
-      icon: Brain,
-      title: "AI Consultancy",
-      desc: "Expert guidance for organisations exploring and adopting artificial intelligence.",
-      details: "Our consultancy services support organisations at every stage of their AI journey — from early exploration to implementation and scaling.",
+      icon: Shield,
+      title: "Cybersecurity",
+      desc: "Securing AI assets and enterprise infrastructure against digital threats.",
+      details: "We implement robust security frameworks, perform vulnerability assessments, and protect machine learning models and sensitive corporate data from adversarial attacks.",
       features: [
-        "AI use case discovery",
-        "Technical advisory and architecture",
-        "AI solution design",
-        "Organisational AI readiness",
+        "Model & Data Security Audits",
+        "Adversarial Threat Defense",
+        "Secure Access Control & APIs",
+        "Threat Monitoring & Compliance",
       ],
-      featuresTitle: "Focus areas",
+      featuresTitle: "Core Focus",
       color: "from-teal-500/10 to-emerald-500/5",
       borderColor: "group-hover:border-teal-500/40",
       iconColor: "text-teal-400",
@@ -81,7 +82,7 @@ export default function Services() {
         <h2 className="font-orbitron font-bold text-3xl md:text-5xl mb-6">
           <span className="text-cyber-cyan text-glow">Our Solutions</span>
         </h2>
-        <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
+        <p className="text-white-400 text-base md:text-lg max-w-2xl mx-auto">
           Built on enterprise operational experience, our solutions help organisations of all sizes improve processes, strengthen governance, automate workflows, and apply AI where it delivers measurable value.
         </p>
       </div>

@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
         <h2 className="font-orbitron font-bold text-3xl md:text-5xl mb-6">
           Why Choose <span className="text-cyber-cyan text-glow">CorpTech AI</span>?
         </h2>
-        <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
+        <p className="text-white-400 text-base md:text-lg max-w-2xl mx-auto">
           Leveraging 20+ years of enterprise operational leadership and practical consultancy expertise to help organisations improve processes, strengthen governance, automate workflows, and adopt AI with confidence.
         </p>
       </div>
@@ -93,16 +93,15 @@ export default function WhyChooseUs() {
       <div className="relative bg-cyber-card/75 border border-zinc-800/80 rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
         {/* Subtle grid background for the stats card */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-5 pointer-events-none" />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 items-center relative z-10">
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
             return (
               <div
                 key={idx}
-                className={`flex flex-col items-center text-center py-4 ${
-                  idx < 2 ? "md:border-r border-zinc-800/80" : ""
-                }`}
+                className={`flex flex-col items-center text-center py-4 ${idx < 2 ? "md:border-r border-zinc-800/80" : ""
+                  }`}
               >
                 <div className="w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-4">
                   <Icon className="w-5 h-5 text-cyber-cyan" />
