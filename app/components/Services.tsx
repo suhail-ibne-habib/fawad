@@ -79,7 +79,7 @@ export default function Services() {
       {/* Title */}
       <div className="text-center mb-24">
         <h2 className="font-orbitron font-bold text-3xl md:text-5xl mb-6">
-          Our <span className="text-cyber-cyan text-glow">Services</span>
+          <span className="text-cyber-cyan text-glow">Solutions</span>
         </h2>
         <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
           Comprehensive AI solutions designed to transform your business operations, secure your data, and drive sustainable market growth.

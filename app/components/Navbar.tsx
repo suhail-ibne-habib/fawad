@@ -6,6 +6,7 @@ import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
@@ -22,8 +23,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
+  ];
+
+  const productsSubMenu = [
+    { name: "CorpQ", href: "#corpq" },
   ];
 
   const solutionsSubMenu = [
@@ -58,9 +62,32 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
+          {/* Products Dropdown */}
+          <div className="relative group py-2">
+            <button className="flex items-center gap-1.5 text-sm font-medium text-white hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
+              Products
+              <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
+            </button>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-48 rounded-2xl border border-zinc-800 bg-cyber-card/95 backdrop-blur-xl p-3 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+              <div className="flex flex-col gap-1">
+                {productsSubMenu.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="px-4 py-2.5 rounded-xl text-xs font-semibold font-orbitron text-zinc-400 hover:text-cyber-cyan hover:bg-cyber-cyan/5 border border-transparent hover:border-cyber-cyan/15 transition-all duration-200"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Solutions Dropdown */}
           <div className="relative group py-2">
-            <button className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
+            <button className="flex items-center gap-1.5 text-sm font-medium text-white hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
               Solutions
               <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
             </button>
@@ -81,11 +108,10 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* About Dropdown */}
+          {/* About Dropdown (no caret) */}
           <div className="relative group py-2">
-            <button className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
+            <button className="flex items-center text-sm font-medium text-white hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
               About
-              <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
             </button>
             
             {/* Dropdown Menu */}
@@ -108,7 +134,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-zinc-400 hover:text-cyber-cyan transition-colors duration-200"
+              className="text-sm font-medium text-white hover:text-cyber-cyan transition-colors duration-200"
             >
               {link.name}
             </a>
@@ -143,11 +169,34 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col p-8 gap-8 items-center w-full max-w-sm">
+          {/* Products Mobile Accordion */}
+          <div className="w-full flex flex-col items-center">
+            <button
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
+              className="flex items-center gap-2 text-2xl font-orbitron font-medium text-white hover:text-cyber-cyan transition-colors cursor-pointer"
+            >
+              Products
+              <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isProductsOpen ? "rotate-180" : ""}`} />
+            </button>
+            <div className={`flex flex-col items-center gap-4 mt-4 transition-all duration-300 overflow-hidden ${isProductsOpen ? "max-h-[150px] opacity-100" : "max-h-0 opacity-0"}`}>
+              {productsSubMenu.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-lg font-orbitron font-medium text-zinc-500 hover:text-cyber-cyan transition-colors"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* Solutions Mobile Accordion */}
           <div className="w-full flex flex-col items-center">
             <button
               onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-              className="flex items-center gap-2 text-2xl font-orbitron font-medium text-zinc-300 hover:text-cyber-cyan transition-colors cursor-pointer"
+              className="flex items-center gap-2 text-2xl font-orbitron font-medium text-white hover:text-cyber-cyan transition-colors cursor-pointer"
             >
               Solutions
               <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isSolutionsOpen ? "rotate-180" : ""}`} />
@@ -170,7 +219,7 @@ export default function Navbar() {
           <div className="w-full flex flex-col items-center">
             <button
               onClick={() => setIsAboutOpen(!isAboutOpen)}
-              className="flex items-center gap-2 text-2xl font-orbitron font-medium text-zinc-300 hover:text-cyber-cyan transition-colors cursor-pointer"
+              className="flex items-center gap-2 text-2xl font-orbitron font-medium text-white hover:text-cyber-cyan transition-colors cursor-pointer"
             >
               About
               <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isAboutOpen ? "rotate-180" : ""}`} />
@@ -194,7 +243,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-orbitron font-medium text-zinc-300 hover:text-cyber-cyan transition-colors"
+              className="text-2xl font-orbitron font-medium text-white hover:text-cyber-cyan transition-colors"
             >
               {link.name}
             </a>
@@ -203,7 +252,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="mt-6 w-full text-center py-3.5 rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue font-orbitron font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+            className="mt-6 w-full text-center py-3.5 rounded-full bg-gradient-to-r from-cyber-cyan to-cyber-blue font-orbitron font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2 text-white"
           >
             Explore CorpQ
             <ArrowRight className="w-4 h-4" />

@@ -36,8 +36,8 @@ export default function Contact() {
         <h2 className="font-orbitron font-bold text-3xl md:text-5xl mb-6">
           Ready to <span className="text-cyber-cyan text-glow">Transform</span>?
         </h2>
-        <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
-          Get in touch with our team of AI experts to discuss how we can help automate, secure, and grow your business.
+        <p className="text-zinc-400 text-base md:text-lg max-w-3xl mx-auto">
+          Let's turn operational challenges into smarter processes, better decisions and measurable business outcomes through practical AI, governance and automation.
         </p>
       </div>
 
@@ -48,17 +48,17 @@ export default function Contact() {
           
           <div>
             <h3 className="font-orbitron font-bold text-xl md:text-2xl mb-8 text-zinc-100">
-              Contact Information
+              Let’s Connect 👋
             </h3>
             <div className="space-y-6">
               <a
-                href="mailto:hello@corptech.ai"
+                href="mailto:getintouch@corptechai.co.uk"
                 className="flex items-center gap-4 text-zinc-400 hover:text-cyber-cyan transition-colors group"
               >
                 <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800/80 flex items-center justify-center shrink-0 group-hover:border-cyber-cyan/30">
                   <Mail className="w-5 h-5 text-cyber-cyan" />
                 </div>
-                <span className="text-sm font-medium">hello@corptech.ai</span>
+                <span className="text-sm font-medium">getintouch@corptechai.co.uk</span>
               </a>
 
               <a
@@ -75,7 +75,7 @@ export default function Contact() {
                 <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800/80 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-cyber-cyan" />
                 </div>
-                <span className="text-sm font-medium">San Francisco, CA</span>
+                <span className="text-sm font-medium">London, UK</span>
               </div>
             </div>
           </div>

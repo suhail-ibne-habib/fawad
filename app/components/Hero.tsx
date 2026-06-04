@@ -19,14 +19,12 @@ export default function Hero() {
         </div>
 
         {/* Hero Title */}
-        <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
-            Building the Next
-          </span>
+        <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8 text-white">
+          Transforming Business
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-cyber-blue text-glow">
-            Generation of Enterprise AI
-          </span>
+          Operations Through
+          <br />
+          <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.45)]">Practical AI</span>
         </h1>
 
         {/* Sub-description */}
