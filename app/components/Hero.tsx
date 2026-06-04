@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Futuristic Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-10 pointer-events-none -z-20" />
 
-      <div className="max-w-4xl mx-auto flex flex-col items-center">
+      <div className="max-w-8xl mx-auto flex flex-col items-center">
         {/* Subtitle Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyber-cyan/30 bg-cyber-cyan/5 text-cyber-cyan font-orbitron text-xs font-semibold tracking-[0.2em] uppercase mb-8 shadow-[0_0_15px_rgba(6,182,212,0.1)]">
           <Sparkles className="w-3.5 h-3.5 animate-pulse" />
@@ -20,9 +20,7 @@ export default function Hero() {
 
         {/* Hero Title */}
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8 text-white">
-          Transforming Business
-          <br />
-          Operations Through
+          Transforming Business<br /> Operations Through
           <br />
           <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.45)]">Practical AI</span>
         </h1>
