@@ -31,10 +31,10 @@ export default function Navbar() {
   ];
 
   const solutionsSubMenu = [
-    { name: "AI Strategy & Transformation", href: "#strategy" },
-    { name: "AI Platform Development", href: "#platform" },
-    { name: "Enterprise AI Integration", href: "#integration" },
-    { name: "AI Consultancy", href: "#consultancy" },
+    { name: "AI Consultancy", href: "#strategy" },
+    { name: "AI Governance & Frameworks", href: "#platform" },
+    { name: "AI Automation", href: "#integration" },
+    { name: "Cybersecurity", href: "#consultancy" },
   ];
 
   const aboutSubMenu = [
@@ -45,11 +45,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-cyber-dark/85 backdrop-blur-md border-b border-cyber-cyan/15 py-4 shadow-[0_4px_30px_rgba(0,0,0,0.15)]"
           : "bg-transparent py-6 border-b border-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
@@ -68,7 +67,7 @@ export default function Navbar() {
               Products
               <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
             </button>
-            
+
             {/* Dropdown Menu */}
             <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-48 rounded-2xl border border-zinc-800 bg-cyber-card/95 backdrop-blur-xl p-3 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
               <div className="flex flex-col gap-1">
@@ -91,7 +90,7 @@ export default function Navbar() {
               Solutions
               <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
             </button>
-            
+
             {/* Dropdown Menu */}
             <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 rounded-2xl border border-zinc-800 bg-cyber-card/95 backdrop-blur-xl p-3 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
               <div className="flex flex-col gap-1">
@@ -113,7 +112,7 @@ export default function Navbar() {
             <button className="flex items-center text-sm font-medium text-white hover:text-cyber-cyan transition-colors duration-200 cursor-pointer">
               About
             </button>
-            
+
             {/* Dropdown Menu */}
             <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-56 rounded-2xl border border-zinc-800 bg-cyber-card/95 backdrop-blur-xl p-3 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
               <div className="flex flex-col gap-1">
@@ -164,9 +163,8 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`md:hidden fixed inset-0 top-0 h-screen w-screen bg-cyber-dark/98 backdrop-blur-xl z-40 transition-transform duration-300 ease-in-out flex flex-col justify-center items-center ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`md:hidden fixed inset-0 top-0 h-screen w-screen bg-cyber-dark/98 backdrop-blur-xl z-40 transition-transform duration-300 ease-in-out flex flex-col justify-center items-center ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex flex-col p-8 gap-8 items-center w-full max-w-sm">
           {/* Products Mobile Accordion */}
@@ -248,7 +246,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          
+
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
