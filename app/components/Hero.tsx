@@ -22,7 +22,7 @@ export default function Hero() {
         <h1 className="font-orbitron font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mb-8 text-white">
           Transforming Business<br /> Operations Through
           <br />
-          <span className="text-cyber-cyan">Practical AI</span>
+          <span className="text-cyber-cyan">Practical </span>AI
         </h1>
 
         {/* Sub-description */}
