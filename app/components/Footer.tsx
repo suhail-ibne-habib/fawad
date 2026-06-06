@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,15 +34,36 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left Side: Logo and Copyright */}
         <div className="flex flex-col items-center md:items-start gap-3">
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <span className="font-orbitron font-extrabold text-lg tracking-wider flex items-center">
               <span className="text-cyber-cyan">CorpTech</span>
               <span className="text-white">AI</span>
             </span>
           </a>
-          <p className="text-zinc-500 text-xs font-medium">
-            &copy; {currentYear} CorpTech AI. All rights reserved.
-          </p>
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1 text-zinc-500 text-xs font-medium">
+            <span>&copy; {currentYear} CorpTech AI. All rights reserved.</span>
+            <span className="text-zinc-700 hidden sm:inline">|</span>
+            <Link
+              href="/privacy"
+              className="hover:text-cyber-cyan transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-zinc-700">|</span>
+            <Link
+              href="/terms"
+              className="hover:text-cyber-cyan transition-colors"
+            >
+              Terms of Use
+            </Link>
+            <span className="text-zinc-700">|</span>
+            <Link
+              href="/cookie"
+              className="hover:text-cyber-cyan transition-colors"
+            >
+              Cookie Policy
+            </Link>
+          </div>
           <div className="mt-3 text-zinc-500 text-xs space-y-1 text-center md:text-left">
             <p className="font-semibold text-zinc-400">CorpTechAI</p>
             <p>A trading name of CORPTECH LTD</p>

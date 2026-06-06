@@ -1,5 +1,4 @@
-import React from "react";
-import { Layers, Network, Brain, CheckCircle2, Shield } from "lucide-react";
+import { Layers, Network, Brain, CheckCircle2, Shield, Users } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -72,6 +71,27 @@ export default function Services() {
       borderColor: "group-hover:border-teal-500/40",
       iconColor: "text-teal-400",
       shadow: "shadow-[0_0_50px_rgba(20,184,166,0.1)]",
+    },
+    {
+      id: "advisory",
+      icon: Users,
+      title: "Founder & Startup Advisory",
+      desc: "Helping founders align vision, brand, and technology for growth.",
+      details: "Many founders know where they want to go but struggle to connect the vision, brand, services and technology needed to get there. We help bring those pieces together into a clear and actionable roadmap for growth.",
+      features: [
+        "Business Model Review",
+        "Website & Brand Alignment",
+        "Service Portfolio Design",
+        "Customer Journey Review",
+        "Social Media Alignment",
+        "Growth Roadmapping",
+        "AI Opportunity Assessment",
+      ],
+      featuresTitle: "Focus Areas",
+      color: "from-purple-500/10 to-pink-500/5",
+      borderColor: "group-hover:border-purple-500/40",
+      iconColor: "text-purple-400",
+      shadow: "shadow-[0_0_50px_rgba(168,85,247,0.1)]",
     },
   ];
 

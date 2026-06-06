@@ -47,7 +47,6 @@ export default function WhyChooseUs() {
       number: "1 Platform",
       label: "Building CorpQ — Enterprise Expert Discovery AI",
       glowColor: "text-indigo-400",
-      href: "https://corpq.co.uk",
     },
   ];
 
@@ -98,42 +97,21 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 items-center relative z-10">
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
-            const isLink = 'href' in stat && stat.href;
             const containerClasses = `flex flex-col items-center text-center py-4 ${
               idx < 2 ? "md:border-r border-zinc-800/80" : ""
-            } ${isLink ? "hover:scale-[1.02] cursor-pointer group/stat transition-all duration-300" : ""}`;
+            }`;
 
-            const content = (
-              <>
-                <div className={`w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-4 ${isLink ? "group-hover/stat:border-cyber-cyan/40 group-hover/stat:shadow-[0_0_15px_rgba(6,182,212,0.25)] transition-all duration-300" : ""}`}>
+            return (
+              <div key={idx} className={containerClasses}>
+                <div className="w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-4">
                   <Icon className="w-5 h-5 text-cyber-cyan" />
                 </div>
                 <div className={`font-orbitron font-extrabold text-4xl md:text-5xl mb-2 text-glow ${stat.glowColor}`}>
                   {stat.number}
                 </div>
-                <div className={`text-zinc-400 text-sm font-medium tracking-wide ${isLink ? "group-hover/stat:text-cyber-cyan transition-colors" : ""}`}>
+                <div className="text-zinc-400 text-sm font-medium tracking-wide">
                   {stat.label}
                 </div>
-              </>
-            );
-
-            if (isLink) {
-              return (
-                <a
-                  key={idx}
-                  href={stat.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={containerClasses}
-                >
-                  {content}
-                </a>
-              );
-            }
-
-            return (
-              <div key={idx} className={containerClasses}>
-                {content}
               </div>
             );
           })}
