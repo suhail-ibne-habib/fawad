@@ -39,9 +39,9 @@ export default function Navbar() {
   ];
 
   const aboutSubMenu = [
-    { name: "Our Story", href: "/#story" },
-    { name: "Our Vision", href: "/#vision" },
-    { name: "Leadership", href: "/#leadership" },
+    { name: "Our Story", href: "/about/our-story" },
+    { name: "Our Vision", href: "/about/our-vision" },
+    { name: "Leadership", href: "/about/leadership" },
   ];
 
   return (
