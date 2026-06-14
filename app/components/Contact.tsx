@@ -9,9 +9,9 @@ import { Mail, MapPin, Clock, Send, CheckCircle2, ChevronDown } from "lucide-rea
 // Sign up free at https://www.emailjs.com then fill in these three values.
 // See EMAILJS_SETUP.md in the project root for step-by-step instructions.
 // ─────────────────────────────────────────────────────────────────────────────
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";   // e.g. "service_abc123"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xyz789"
-const EMAILJS_PUBLIC_KEY = "aLAMjC01K3Xu4KcC8";   // e.g. "AbCdEfGhIjKlMnOp"
+const EMAILJS_SERVICE_ID = "service_w8ih9as";   // e.g. "service_abc123"
+const EMAILJS_TEMPLATE_ID = "template_nwxjnbn";  // e.g. "template_xyz789"
+const EMAILJS_PUBLIC_KEY = "ZgQWGu3da5ZHcZPCo";   // e.g. "AbCdEfGhIjKlMnOp"
 
 const TOPIC_OPTIONS = [
   "AI Consultancy",
@@ -219,8 +219,8 @@ export default function Contact() {
                   type="button"
                   onClick={() => setTopicOpen((o) => !o)}
                   className={`w-full bg-zinc-950/80 border rounded-xl px-4 py-3 text-sm text-left flex items-center justify-between transition-all focus:outline-none ${topicOpen
-                      ? "border-cyber-cyan/60 ring-1 ring-cyber-cyan/20"
-                      : "border-zinc-800"
+                    ? "border-cyber-cyan/60 ring-1 ring-cyber-cyan/20"
+                    : "border-zinc-800"
                     } ${formData.topic ? "text-white" : "text-zinc-600"}`}
                 >
                   <span>{formData.topic || "Select a topic"}</span>
@@ -241,8 +241,8 @@ export default function Contact() {
                             setTopicOpen(false);
                           }}
                           className={`w-full text-left px-4 py-3 text-sm transition-colors hover:bg-cyber-cyan/10 hover:text-cyber-cyan ${formData.topic === opt
-                              ? "text-cyber-cyan bg-cyber-cyan/5"
-                              : "text-zinc-300"
+                            ? "text-cyber-cyan bg-cyber-cyan/5"
+                            : "text-zinc-300"
                             }`}
                         >
                           {opt}

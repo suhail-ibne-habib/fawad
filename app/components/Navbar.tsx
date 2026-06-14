@@ -27,7 +27,7 @@ export default function Navbar() {
   ];
 
   const productsSubMenu = [
-    { name: "CorpQ", href: "/#why-choose-us" },
+    { name: "CorpQ", href: "/products/corpq" },
   ];
 
   const solutionsSubMenu = [
